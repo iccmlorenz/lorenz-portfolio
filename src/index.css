@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Inter", sans-serif;
+
+  color: #10233f;
+  background: #f8fafc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: #f8fafc;
+  color: #10233f;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========================================
+   BUTTONS / FORM ELEMENTS
+======================================== */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 3px;
+}
+
+/* ========================================
+   IMAGES
+======================================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================================
+   LISTS
+======================================== */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ========================================
+   DARK MODE
+======================================== */
+
+body.dark-mode {
+  background: #071426;
+  color: #eaf3ff;
+}
+
+/* ========================================
+   MOBILE ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
