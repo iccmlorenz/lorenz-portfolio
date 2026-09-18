@@ -1,3 +1,5 @@
+import profilePhoto from "../assets/profile.jpg";
+
 function About() {
   return (
     <section id="about" className="section about">
@@ -12,7 +14,7 @@ function About() {
 
           <div className="about-placeholder">
             <img
-              src="/src/assets/profile.jpg"
+              src={profilePhoto}
               alt="Lorenz Dave Macatangay"
               className="profile-photo"
             />
@@ -60,7 +62,6 @@ function About() {
               </div>
 
             </div>
-
 
           </div>
 
